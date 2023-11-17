@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemBeranda"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Beranda"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemStok"
+        android:icon="@drawable/baseline_assignment_24"
+        android:title="Stok"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/penjualanFragment"
+        android:icon="@drawable/baseline_shopping_bag_24"
+        android:title="Penjualan Kendaraan"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemLaporan"
+        android:icon="@drawable/baseline_drive_eta_24"
+        android:title="Laporan per Kendaraan"
+        app:showAsAction="always" />
+</menu>

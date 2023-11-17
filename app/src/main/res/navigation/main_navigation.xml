@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemBeranda">
+
+    <fragment
+        android:id="@+id/itemBeranda"
+        android:name="id.web.devin.penjualankendaraan.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/itemStok"
+        android:name="id.web.devin.penjualankendaraan.StokFragment"
+        android:label="fragment_stok"
+        tools:layout="@layout/fragment_stok" />
+    <fragment
+        android:id="@+id/itemLaporan"
+        android:name="id.web.devin.penjualankendaraan.LaporanFragment"
+        android:label="fragment_laporan"
+        tools:layout="@layout/fragment_laporan" />
+    <fragment
+        android:id="@+id/penjualanFragment"
+        android:name="id.web.devin.penjualankendaraan.PenjualanFragment"
+        android:label="fragment_penjualan"
+        tools:layout="@layout/fragment_penjualan" />
+</navigation>
