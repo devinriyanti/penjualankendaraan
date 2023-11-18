@@ -1,11 +1,13 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
     namespace 'id.web.devin.penjualankendaraan'
     compileSdk 34
+    apply plugin:"androidx.navigation.safeargs.kotlin"
 
     defaultConfig {
         applicationId "id.web.devin.penjualankendaraan"
@@ -45,10 +47,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.room:room-runtime:2.2.6'
+    implementation 'androidx.room:room-ktx:2.2.6'
+    kapt 'androidx.room:room-compiler:2.2.6'
     implementation "androidx.lifecycle:lifecycle-viewmodel:2.3.1"
     implementation('com.android.volley:volley:1.2.1')
     implementation('com.google.code.gson:gson:2.8.9')
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'androidx.viewpager2:viewpager2'
     implementation 'androidx.viewpager:viewpager:1.0.0'
+
 }

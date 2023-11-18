@@ -13,7 +13,7 @@
         android:title="Stok"
         app:showAsAction="always" />
     <item
-        android:id="@+id/penjualanFragment"
+        android:id="@+id/itemPenjualan"
         android:icon="@drawable/baseline_shopping_bag_24"
         android:title="Penjualan Kendaraan"
         app:showAsAction="always" />

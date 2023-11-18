@@ -1,12 +1,12 @@
-package id.web.devin.penjualankendaraan
+package id.web.devin.penjualankendaraan.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
+import id.web.devin.penjualankendaraan.R
 import id.web.devin.penjualankendaraan.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
