@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = arrayOf(Kendaraan::class), version = 1)
+@Database(entities = arrayOf(Kendaraan::class, Warna::class, Jenis::class, Penjualan::class, DetailPenjualan::class), version = 1)
 abstract class PenjualanDatabase:RoomDatabase() {
     abstract fun penjualanDAO(): PenjualanDAO
     companion object{

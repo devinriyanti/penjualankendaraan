@@ -1,9 +1,13 @@
 package id.web.devin.penjualankendaraan.model
 
 import androidx.room.Entity
+import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "kendaraan")
+@Entity(foreignKeys = [
+    ForeignKey(entity = Warna::class, parentColumns = ["idwarna"], childColumns = ["idwarna"]),
+    ForeignKey(entity = Jenis::class, parentColumns = ["idjenis"], childColumns = ["idjenis"])
+])
 data class Kendaraan(
     var tahun_keluaran:String,
     var harga:Double,
@@ -15,7 +19,7 @@ data class Kendaraan(
     var idkendaraan:Int = 0
 }
 
-@Entity(tableName = "warna")
+@Entity
 data class Warna(
     var nama:String
 ){
@@ -23,7 +27,7 @@ data class Warna(
     var idwarna:Int = 0
 }
 
-@Entity(tableName = "jenis")
+@Entity
 data class Jenis(
     var nama:String,
     var mesin:String,
@@ -36,7 +40,7 @@ data class Jenis(
     var idjenis:Int = 0
 }
 
-@Entity(tableName = "penjualan")
+@Entity
 data class Penjualan(
     var tanggal:String,
     var total_harga:String,
@@ -45,7 +49,7 @@ data class Penjualan(
     var idpenjualan:Int = 0
 }
 
-@Entity(tableName = "detail_penjualan")
+@Entity(tableName = "detail_penjualan",primaryKeys = ["idkendaraan", "idpenjualan"])
 data class DetailPenjualan(
     var idkendaraan:Int,
     var idpenjualan:Int,
